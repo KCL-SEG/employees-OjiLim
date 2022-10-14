@@ -55,29 +55,29 @@ class BonusCommision:
 
 # Billie works on a monthly salary of 4000.  Their total pay is 4000.
 billieContract = SalaryContract(4000)
-billie = Employee('Billie', billieContract)
+billie = Employee('Billie',contract = billieContract)
 
 # Charlie works on a contract of 100 hours at 25/hour.  Their total pay is 2500.
 charlieContract = HourlyContract(25,100)
-charlie = Employee('Charlie', charlieContract)
+charlie = Employee('Charlie', contract = charlieContract)
 
 # Renee works on a monthly salary of 3000 and receives a commission for 4 contract(s) at 200/contract.  Their total pay is 3800.
 reneeContract = SalaryContract(3000)
 reneeCommission = ContractCommission(200,4)
-renee = Employee('Renee', reneeContract, reneeCommission)
+renee = Employee('Renee', contract = reneeContract, commission = reneeCommission)
 
 # Jan works on a contract of 150 hours at 25/hour and receives a commission for 3 contract(s) at 220/contract.  Their total pay is 4410.
 janContract = HourlyContract(25,150)
 janCommission = ContractCommission(220,3)
-jan = Employee('Jan', janContract, janCommission)
+jan = Employee('Jan', contract = janContract, commission = janCommission)
 
 # Robbie works on a monthly salary of 2000 and receives a bonus commission of 1500.  Their total pay is 3500.
 robbieContract = SalaryContract(2000)
 robbieCommission = BonusCommision(1500)
-robbie = Employee('Robbie',robbieContract, robbieCommission)
+robbie = Employee('Robbie', contract = robbieContract, commission = robbieCommission)
 
 
 # Ariel works on a contract of 120 hours at 30/hour and receives a bonus commission of 600.  Their total pay is 4200.
 arialContract = HourlyContract(30,120)
 arialCommission = BonusCommision(600)
-ariel = Employee('Ariel', arialContract, arialCommission)
+ariel = Employee('Ariel', contract = arialContract, commission = arialCommission)
